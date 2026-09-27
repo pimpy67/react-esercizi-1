@@ -181,6 +181,7 @@
     right: 0;
     border-right-color: var(--border);
   }
+<<<<<<< HEAD
 }
 
 .image-box {
@@ -263,3 +264,15 @@ flex-wrap: wrap;
   width: 28px;
   height: 28px;
 }
+
+.alert {
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #222;
+  text-align: left;
+}
+
+.alert-successo { background-color: lightgreen; }
+.alert-errore   { background-color: lightcoral; }
+.alert-avviso   { background-color: khaki; }
