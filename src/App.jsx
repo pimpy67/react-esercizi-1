@@ -12,6 +12,7 @@ import CarDinamica from "./CarDinamica.jsx";
 import TitleSubtitleDinamico from './TitleSubtitleDinamico.jsx';
 import Badge from './Badge.jsx';
 import Prodotto from './Prodotto.jsx'
+import AlertBox from './AlertBox.jsx'
 import laptopIcon from './img/laptop-solid-full.svg'
 import headphonesIcon from './img/headphones-solid-full.svg'
 import mouseIcon from './img/computer-mouse-solid-full.svg'
@@ -139,8 +140,30 @@ colore="green"
 
 </div>
 
+<p className='text-red'>esercizio 12</p>
 
+<div style={{display:'flex', gap:'25px', justifyContent:'center', padding:'20px', border: '1px solid gray', width: 'fit-content', margin: '0 auto', flexWrap: 'wrap'}}>
+  <AlertBox
+      tipo="successo"
+      icona="✅"
+      titolo="Fatto"
+      testo="Dati salvati correttamente."
+  ></AlertBox>
 
+  <AlertBox
+      tipo="errore"
+      icona="❌"
+      titolo="Errore"
+      testo="Salvataggio non riuscito."
+  ></AlertBox>
+
+  <AlertBox
+      tipo="avviso"
+      icona="⚠️"
+      titolo="Attenzione"
+      testo="Controlla i dati inseriti."
+  ></AlertBox>
+</div>
 
 
 </div>
