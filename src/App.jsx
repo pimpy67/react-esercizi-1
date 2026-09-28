@@ -5,6 +5,7 @@ import FunnyButton from './Laboratorio_2/FunnyButton.jsx'
 import Pannello from './Laboratorio_2/Pannello.jsx'
 import fotoLuna from './img/fotoLuna.jpg'
 import headphones from './img/headphones-solid-full.svg'
+import keyboard from './img/keyboard-solid-full.svg'
 
 import EcommerceCard from './Laboratorio_2/EcommerceCard.jsx'
 
@@ -46,16 +47,16 @@ function App() {
     prezzo={99}
     isSoldOut={false}
     preferito={true}
-    fotoProdotto="/img/graphic.jpeg"
+    fotoProdotto={headphones}
   />
 
   <EcommerceCard
-    titolo="Headphones"
-    descrizione="Orologio smart con GPS"
+    titolo="Keyboard"
+    descrizione="Tastiera smart"
     prezzo={149}
     isSoldOut={true}
     preferito={false}
-    fotoProdotto={headphones}
+    fotoProdotto={keyboard}
   />
   </div>
 
