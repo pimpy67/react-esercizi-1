@@ -1,4 +1,4 @@
-import './App.css'
+import '../App.css'
 
 
 function Prodotto({nome, prezzo, icona}) {

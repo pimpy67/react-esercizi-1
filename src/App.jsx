@@ -1,173 +1,67 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
-import  fotoLuna  from "./img/fotoLuna.jpg";
-import  Typography  from "./Typography.jsx";
-import TitleSubtitle from './TitleSubtitle.jsx'
-import ButtonTitle from "./ButtonTitle.jsx";
-import Card from './Card.jsx';
-import CarDinamica from "./CarDinamica.jsx";
-import TitleSubtitleDinamico from './TitleSubtitleDinamico.jsx';
-import Badge from './Badge.jsx';
-import Prodotto from './Prodotto.jsx'
-import AlertBox from './AlertBox.jsx'
-import laptopIcon from './img/laptop-solid-full.svg'
-import headphonesIcon from './img/headphones-solid-full.svg'
-import mouseIcon from './img/computer-mouse-solid-full.svg'
-import keyboardIcon from './img/keyboard-solid-full.svg'
+import Typography from './Laboratorio_2/Typography.jsx'
+import FunnyButton from './Laboratorio_2/FunnyButton.jsx'
+import Pannello from './Laboratorio_2/Pannello.jsx'
+import fotoLuna from './img/fotoLuna.jpg'
+import headphones from './img/headphones-solid-full.svg'
 
+import EcommerceCard from './Laboratorio_2/EcommerceCard.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-<div>
-  <img src={fotoLuna} alt="Descrizione dell'immagine" style={{borderRadius: "0%"}} className="image-box"/>
-  <img src="/img/jpeg-image-800x480-pixels-v0-F68kvfYbadU3ah6qa2n5vbzX3mAVp97dzDtvp7HIdZ0.webp" alt="" className="image-box" />
+<div style={{display: "flex", flexDirection: "column", gap:"20px"}}>
 
-  <p>Questo è un bottone</p>
-  <button onClick={() => {console.log("ciao");}}>ciao</button>
+    <Typography
+    colore = "red" testo ="ho 20 anni"> +ciao</Typography>
 
-  <p className='text-red'>esercizio 4</p>
-  <Typography></Typography>
-  <Typography></Typography>
-  <Typography></Typography>
+    <FunnyButton 
+    color = "yellow" isLarge={true}> Sono grande!</FunnyButton>
 
-  <p className='text-red'>esercizio 5</p>
-  <TitleSubtitle></TitleSubtitle>
-  <TitleSubtitle></TitleSubtitle>
-  <TitleSubtitle></TitleSubtitle>
+    <FunnyButton
+    color = "green" isLarge={false}> Sono piccolo!</FunnyButton>
 
-  <p className='text-red'>esercizio 6</p>
-<ButtonTitle></ButtonTitle>
-<ButtonTitle></ButtonTitle>
-<ButtonTitle></ButtonTitle>
-
-  <p className='text-red'>esercizio 7</p>
-  <Card></Card>
-  <Card></Card>
-
-<p className='text-red'>esercizio 8</p>
-<section className='CarDinamica-container'>
-<CarDinamica
-imageSrc="/public/img/uomo-d-affari-professionale.jpg"
-name="Roberto"
-role="Developer"
-></CarDinamica>
-
-<CarDinamica
-imageSrc="/public/img/donna-avatar-riccio-bruna.jpg"
-name="Laura"
-role="FullStack"
-></CarDinamica>
-
-<CarDinamica
-imageSrc="/public/img/graphic.jpeg"
-name="Jacob"
-role="Graphic Design"
->
-</CarDinamica>
-</section>
+    <FunnyButton
+    color = "lightblue" isLarge={true}> Sono light blu</FunnyButton>
+    <FunnyButton color = "green"> questo è il secondo children</FunnyButton>
 
 
-<p className='text-red'>esercizio 9</p>
-<div className='component-TSDinamico'>
-<TitleSubtitleDinamico
-className='format-TSDinamico'
+    <Pannello titolo="Il mio pannello">
+    <p>ciao mondo</p>
+    <p>questo è il mio contenuto</p>
+    </Pannello>
 
-name="Paolo"
-role="CEO"
-></TitleSubtitleDinamico>
+    <Pannello titolo="Il mio 2 pannello">
+    <p>ciao mondo</p>
+    <img style={{ width: "200px", height: "150px", objectFit: "cover" }} src={fotoLuna} alt=""/>
+    <button>scarica</button>
+    </Pannello>
 
-<TitleSubtitleDinamico 
-className='format-TSDinamico'
-name="Andrea"
-role="Ingegnere"
-></TitleSubtitleDinamico>
+<div style={{display: "flex", gap: "20px", flexWrap: "wrap" }}>
+  <EcommerceCard
+    titolo="Cuffie"
+    descrizione="Cuffie wireless con cancellazione del rumore"
+    prezzo={99}
+    isSoldOut={false}
+    preferito={true}
+    fotoProdotto="/img/graphic.jpeg"
+  />
 
-<TitleSubtitleDinamico
-className='format-TSDinamico'
-name="Sara"
-role="Administrator"
-></TitleSubtitleDinamico>
+  <EcommerceCard
+    titolo="Headphones"
+    descrizione="Orologio smart con GPS"
+    prezzo={149}
+    isSoldOut={true}
+    preferito={false}
+    fotoProdotto={headphones}
+  />
+  </div>
 
-<TitleSubtitleDinamico
-className='format-TSDinamico'
-name="Chiara"
-role="Manager"
-></TitleSubtitleDinamico>
-</div>
-
-<p className='text-red'>esercizio 10</p>
-
-<div style={{display:'flex', gap:'25px', justifyContent:'center', padding:'20px', border: '1px solid gray', width: 'fit-content', margin: '0 auto'}}>
-<Badge
-testo="Admin"
-colore="red"
-></Badge>
-
-<Badge
-testo="Editor"
-colore="blue"
-></Badge>
-
-<Badge
-testo="Ospite"
-colore="green"
-></Badge>
-</div>
-
-
-<p className='text-red'>esercizio 11</p>
-
-<div className='prodotto'>
-
-
-    <Prodotto icona={laptopIcon} nome="LapTop Pro" prezzo={999}>
-    </Prodotto>
-
-    <Prodotto icona={headphonesIcon} nome="Cuffie Wireless" prezzo={149}>
-    </Prodotto>
-
-    <Prodotto icona={mouseIcon} nome="Mouse Ergonomico" prezzo={59}>
-    </Prodotto>
-
-    <Prodotto icona={keyboardIcon} nome="Tastiera Meccanica" prezzo={89}>
-    </Prodotto>
-
-
-</div>
-
-<p className='text-red'>esercizio 12</p>
-
-<div style={{display:'flex', gap:'25px', justifyContent:'center', padding:'20px', border: '1px solid gray', width: 'fit-content', margin: '0 auto', flexWrap: 'wrap'}}>
-  <AlertBox
-      tipo="successo"
-      icona="✅"
-      titolo="Fatto"
-      testo="Dati salvati correttamente."
-  ></AlertBox>
-
-  <AlertBox
-      tipo="errore"
-      icona="❌"
-      titolo="Errore"
-      testo="Salvataggio non riuscito."
-  ></AlertBox>
-
-  <AlertBox
-      tipo="avviso"
-      icona="⚠️"
-      titolo="Attenzione"
-      testo="Controlla i dati inseriti."
-  ></AlertBox>
-</div>
-
-
-</div>
+  </div>
   )
+
 }
 
 export default App

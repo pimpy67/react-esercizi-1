@@ -1,4 +1,4 @@
-import "./App.css";
+import "../App.css";
 import TitleSubtitleDinamico from "./TitleSubtitleDinamico.jsx";
 
 function CarDinamica({ imageSrc, name, role }) {
