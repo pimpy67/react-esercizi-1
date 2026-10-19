@@ -10,10 +10,10 @@ return (
         <h2>Valore: {valore}</h2>
 
         <div style={{ display: "flex", gap: "10px" }}>
-            <button onClick={() => setValore(valore + 1)}>+1</button>
-            <button onClick={() => setValore(valore - 1)}>-1</button>
-            <button onClick={() => setValore(valore * 2)}>x2</button>
-            <button onClick={() => setValore(valore / 2)}>/2</button>
+            <button onClick={() => {setValore(valore + 1)}}>+1</button>
+            <button onClick={() => {setValore(valore - 1)}}>-1</button>
+            <button onClick={() => {setValore(valore * 2)}}>x2</button>
+            <button onClick={() => {setValore(valore / 2)}}>/2</button>
         </div>
 
     </div>
