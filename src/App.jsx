@@ -1,16 +1,17 @@
 import './App.css'
-import LikeButton from './Laboratorio_3/LikeButton.jsx'
+import Laboratorio_1 from './Laboratorio_1/Laboratorio_1'
 
-function App() {
 
-  return (
-<div style={{display: "flex", gap: "20px"}}>
-  <LikeButton likeIniziali={0} />
-  <LikeButton likeIniziali={12} />
-  <LikeButton likeIniziali={340} />
-</div>
-  )
+function App () {
 
+return (
+
+<Laboratorio_1>
+
+  
+</Laboratorio_1>
+
+)
 }
 
 export default App
