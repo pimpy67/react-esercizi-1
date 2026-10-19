@@ -5,7 +5,7 @@ function Card() {
     
 return (
 <div className="card-avatar">
-    <img src="/public/img/uomo-d-affari-professionale.jpg" alt="" />
+    <img src="/img/uomo-d-affari-professionale.jpg" alt="" />
     <TitleSubtitle></TitleSubtitle>
 </div>
 )

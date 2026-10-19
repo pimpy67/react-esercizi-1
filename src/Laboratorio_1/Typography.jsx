@@ -3,8 +3,8 @@ import '../App.css'
 function Typography() {
 
   return (
-<div>
-    <h3>Ciao <span className='text-red'>studente</span></h3>
+<div className='typograph'>
+    <h3>Ciao <span>studente</span></h3>
 </div>
   
   )

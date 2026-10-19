@@ -191,6 +191,9 @@
 
 .text-red {
   color: red;
+  text-decoration: underline;
+  text-transform:uppercase;
+  font-weight: bold;
 }
 
 .card-avatar {
@@ -275,3 +278,8 @@ flex-wrap: wrap;
 .alert-successo { background-color: lightgreen; }
 .alert-errore   { background-color: lightcoral; }
 .alert-avviso   { background-color: khaki; }
+
+.esercizio-4 h3 span {
+
+  color: rgb(1, 54, 246);
+}

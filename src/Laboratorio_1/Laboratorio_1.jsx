@@ -21,16 +21,29 @@ function Laboratorio_1() {
   return (
 <div>
 <div>
-  <img src={fotoLuna} alt="Descrizione dell'immagine" style={{borderRadius: "0%"}} className="image-box"/>
-  <img src="/img/jpeg-image-800x480-pixels-v0-F68kvfYbadU3ah6qa2n5vbzX3mAVp97dzDtvp7HIdZ0.webp" alt="" className="image-box" />
+
+  <p className='text-red'>esercizio 1</p>
+  <h1>La mia prima scritta React!</h1>
+
+  <p className='text-red'>esercizio 2</p>
+  <img src={fotoLuna} alt="immagine luna" style={{borderRadius: "0%"}} className="image-box"/>
+  <img src="/img/jpeg-image-800x480-pixels-v0-F68kvfYbadU3ah6qa2n5vbzX3mAVp97dzDtvp7HIdZ0.webp" alt="immagine lago" className="image-box" />
 
   <p>Questo è un bottone</p>
   <button onClick={() => {console.log("ciao");}}>ciao</button>
 
+  <p className='text-red'>esercizio 3</p>
+  <Typography></Typography>
+  <Typography></Typography>
+  <Typography></Typography>
+
   <p className='text-red'>esercizio 4</p>
+  <div className='esercizio-4'>
   <Typography></Typography>
   <Typography></Typography>
   <Typography></Typography>
+</div>
+
 
   <p className='text-red'>esercizio 5</p>
   <TitleSubtitle></TitleSubtitle>
@@ -49,19 +62,19 @@ function Laboratorio_1() {
 <p className='text-red'>esercizio 8</p>
 <section className='CarDinamica-container'>
 <CarDinamica
-imageSrc="/public/img/uomo-d-affari-professionale.jpg"
+imageSrc="/img/uomo-d-affari-professionale.jpg"
 name="Roberto"
 role="Developer"
 ></CarDinamica>
 
 <CarDinamica
-imageSrc="/public/img/donna-avatar-riccio-bruna.jpg"
+imageSrc="/img/donna-avatar-riccio-bruna.jpg"
 name="Laura"
 role="FullStack"
 ></CarDinamica>
 
 <CarDinamica
-imageSrc="/public/img/graphic.jpeg"
+imageSrc="/img/graphic.jpeg"
 name="Jacob"
 role="Graphic Design"
 >
