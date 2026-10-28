@@ -1,14 +1,18 @@
 import '../App.css'
+import ActionButton from './ActionButton'
 
-
-["Marco", "Giulia", "Luca", "Sara"]
+const nomi = ["Marco", "Giulia", "Luca", "Sara"]
 
 function Saluti() {
 
 return (
-    <button onClick={() => console.log(message)}>{label}</button>
+    <div style={{ display: "flex", gap: "10px" }}>
+        {nomi.map((nome) => (
+            <ActionButton key={nome} label={nome} message={"Ciao " + nome + "!"} />
+        ))}
+    </div>
     );
 
 }
 
-export default ActionButton;
+export default Saluti;

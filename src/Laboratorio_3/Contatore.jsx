@@ -1,12 +1,15 @@
-let contatore = 0
+import { useState } from 'react'
+import '../App.css'
 
-function App() {
-    return (
+function Contatore() {
+    const [contatore, setContatore] = useState(0)
 
-<button onClick={()=>{contatore++; console.log(contatore) }}>
-    Cliccami ({contatore})
+return (
+    <button onClick={() => {setContatore(contatore + 1)}}>
+        Cliccami ({contatore})
+    </button>
+    );
 
-</button>
-
-    )
 }
+
+export default Contatore;
